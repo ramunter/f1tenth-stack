@@ -10,5 +10,7 @@ COPY f1tenth f1tenth
 # Mount CPP files
 VOLUME /ros2_ws/src/f1tenth
 
+ENV ROS_DOMAIN_ID 42
+
 # Set entry point to run a roslaunch file
 CMD ["ros2", "launch", "f1tenth", "stack.launch"]
